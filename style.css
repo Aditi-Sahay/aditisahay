@@ -195,18 +195,3 @@ footer {
   background-color: #0b0c10;
 }
 
-/* Floating Elements Placeholder */
-.floating-stars, .floating-cassette, .floating-feathers {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  background-color: #66fcf1;
-  border-radius: 50%;
-  animation: floaty 5s infinite ease-in-out alternate;
-  opacity: 0.6;
-}
-
-@keyframes floaty {
-  from { transform: translateY(0); }
-  to { transform: translateY(-20px); }
-}
