@@ -4,148 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aditi Sahay</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;700&family=Share+Tech+Mono&display=swap');
-
-    body {
-      margin: 0;
-      padding: 0;
-      background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1c 100%);
-      font-family: 'Spectral', serif;
-      color: #f1eaff;
-      overflow-x: hidden;
-    }
-
-    header {
-      text-align: center;
-      padding: 10vh 2rem 4rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: #e0d4fd;
-      text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-    }
-
-    p.subtitle {
-      font-size: 1.2rem;
-      font-family: 'Share Tech Mono', monospace;
-      color: #b5aaff;
-      margin-top: 1rem;
-      opacity: 0.85;
-    }
-
-    section {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 2rem;
-      line-height: 1.7;
-    }
-
-    .bio, .book, .buttons {
-      margin-bottom: 3rem;
-    }
-
-    .bio p, .book p {
-      font-size: 1.1rem;
-      color: #dfd7ff;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .button {
-      padding: 0.7rem 1.5rem;
-      background-color: #5c4d91;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-family: 'Share Tech Mono', monospace;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 0 8px rgba(92, 77, 145, 0.6);
-      transition: transform 0.2s, background-color 0.3s;
-    }
-
-    .button:hover {
-      background-color: #7e6bcb;
-      transform: scale(1.05);
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 2rem;
-      color: #aaa;
-      font-style: italic;
-    }
-
-    .stars {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: transparent;
-      overflow: hidden;
-      z-index: -1;
-    }
-
-    .stars::before {
-      content: "";
-      position: absolute;
-      width: 200%;
-      height: 200%;
-      background: transparent url('https://raw.githubusercontent.com/KyleRoss/node-stardust/main/docs/starfield.png') repeat;
-      animation: starScroll 100s linear infinite;
-      opacity: 0.08;
-    }
-
-    @keyframes starScroll {
-      0% { transform: translate(0, 0); }
-      100% { transform: translate(-50%, -50%); }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="stars"></div>
+  <!-- Floating Elements -->
+  <div class="floating-stars"></div>
+  <div class="floating-cassette"></div>
+  <div class="floating-feathers"></div>
 
-  <header>
-    <h1>Aditi Sahay</h1>
-    <p class="subtitle">Welcome to my safe place and yours too!</p>
-  </header>
+  <!-- Moon Toggle -->
+  <div class="moon-toggle">🌙</div>
 
-  <section class="bio">
-    <p>
-      A poetic soul wrapped in quantum logic.<br>
-      Building worlds with words, codes, and contradictions.<br>
-      Head Girl, Creator, Dreamer, Strategist.<br>
-      Sometimes found teaching. Sometimes decoding dreams.
-    </p>
+  <!-- Nav Bar -->
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#book">Book</a>
+    <a href="#music">Music</a>
+    <a href="#contact">Contact</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="section home-section">
+    <h1 class="glitch" data-text="Aditi Sahay">Aditi Sahay</h1>
+    <p class="typewriter">poet. coder. vocalist. dreamer.</p>
   </section>
 
-  <section class="book">
-    <p>
-      <em>Arcade</em> is not a poetry book. It’s a secret level in the game of life.<br>
-      A collection of soul fragments, joystick dreams, and echoes of heartbreak.<br>
-      Enter if you dare — or if you’ve already lost a life or two.
-    </p>
+  <!-- BOOK -->
+  <section id="book" class="section book-section">
+    <div class="book-text">
+      <h2>Arcade</h2>
+      <p>A collection of poetry decoding life like a vintage game—bittersweet, nostalgic, and eternal.</p>
+      <a href="#" class="glow-button">Get Now</a>
+    </div>
+    <div class="book-image">
+      <img src="book-cover.png" alt="Arcade Book Cover" class="rotating-book" />
+    </div>
   </section>
 
-  <section class="buttons">
-    <a href="#" class="button">📖 Read My Work</a>
-    <a href="#" class="button">🎮 Projects / Resume</a>
-    <a href="#" class="button">🦋 Contact Me</a>
+  <!-- MUSIC -->
+  <section id="music" class="section music-section">
+    <div class="music-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="music-info">
+      <a class="glow-button">Spotify</a>
+      <a class="glow-button">SoundCloud</a>
+      <a class="glow-button">YouTube</a>
+      <a class="glow-button">Amazon Music</a>
+      <p class="behind-scenes">"I wrote this track at 2AM, layered with every emotion I was too scared to say aloud."
+      <br><span class="lyric-hover">the night hums your name back to me.</span></p>
+    </div>
   </section>
 
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <h2>Contact Me</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/aditi-sahay-0504082ab/" class="glow-button" target="_blank">LinkedIn</a>
+      <a href="https://www.youtube.com/@aditiii777" class="glow-button" target="_blank">YouTube</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    "I am a cage, in search of a bird." – Kafka
+    <p>&copy; 2025 Aditi Sahay. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
