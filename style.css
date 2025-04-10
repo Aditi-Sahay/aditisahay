@@ -95,12 +95,13 @@ a {
 .typewriter {
   border-right: 2px solid #66fcf1;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: visible;
   width: 0;
   animation: typing 4s steps(30, end) forwards;
   font-size: 1.2rem;
   margin-top: 1rem;
   color: #66fcf1;
+
 }
 
 @keyframes typing {
