@@ -1,18 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ria's World</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcade | Ria's Universe</title>
   <style>
-    body { font-family: sans-serif; text-align: center; margin: 50px; background: #f9f9f9; }
-    h1 { color: #333; }
-    a { color: blue; text-decoration: none; }
+    @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;700&family=Share+Tech+Mono&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1c 100%);
+      font-family: 'Spectral', serif;
+      color: #f1eaff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 10vh 2rem 4rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #e0d4fd;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      font-family: 'Share Tech Mono', monospace;
+      color: #b5aaff;
+      margin-top: 1rem;
+      opacity: 0.85;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.7;
+    }
+
+    .bio, .book, .buttons {
+      margin-bottom: 3rem;
+    }
+
+    .bio p, .book p {
+      font-size: 1.1rem;
+      color: #dfd7ff;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      padding: 0.7rem 1.5rem;
+      background-color: #5c4d91;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Share Tech Mono', monospace;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 8px rgba(92, 77, 145, 0.6);
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #7e6bcb;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    .stars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .stars::before {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: transparent url('https://raw.githubusercontent.com/KyleRoss/node-stardust/main/docs/starfield.png') repeat;
+      animation: starScroll 100s linear infinite;
+      opacity: 0.08;
+    }
+
+    @keyframes starScroll {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-50%, -50%); }
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Ria's Website 🎮</h1>
-  <p>This is a test site hosted for FREE on GitHub Pages.</p>
-  <p>More coming soon...</p>
+  <div class="stars"></div>
+
+  <header>
+    <h1>Arcade</h1>
+    <p class="subtitle">life is a game, poetry is the cheat code.</p>
+  </header>
+
+  <section class="bio">
+    <p>
+      A poetic soul wrapped in quantum logic.<br>
+      Building worlds with words, codes, and contradictions.<br>
+      Head Girl, Creator, Dreamer, Strategist.<br>
+      Sometimes found teaching. Sometimes decoding dreams.
+    </p>
+  </section>
+
+  <section class="book">
+    <p>
+      <em>Arcade</em> is not a poetry book. It’s a secret level in the game of life.<br>
+      A collection of soul fragments, joystick dreams, and echoes of heartbreak.<br>
+      Enter if you dare — or if you’ve already lost a life or two.
+    </p>
+  </section>
+
+  <section class="buttons">
+    <a href="#" class="button">📖 Read My Work</a>
+    <a href="#" class="button">🎮 Projects / Resume</a>
+    <a href="#" class="button">🦋 Contact Me</a>
+  </section>
+
+  <footer>
+    "I am a cage, in search of a bird." – Kafka
+  </footer>
 </body>
 </html>
