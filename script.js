@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", typeEffect);
 
 // Rotate Book on Scroll
 const bookImage = document.querySelector(".rotating-book");
+
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   if (bookImage) {
-    bookImage.style.transform = rotate(${(scrollY * 0.1) % 10 - 5}deg);
+    bookImage.style.transform = `rotate(${(scrollY * 0.1) % 10 - 5}deg)`;
   }
 });
