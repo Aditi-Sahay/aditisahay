@@ -1,12 +1,9 @@
 /* Reset and Base */
 body {
-  margin: 0;
-  padding: 0;
-  background: radial-gradient(circle, #1a1a2e 0%, #0f0f0f 100%);
-  color: #e0e0e0;
-  font-family: 'Georgia', Serif;
-  background-color: #3F1949;
-  overflow-x: hidden;
+  background: radial-gradient(circle at center, #a97fd8 0%, #3a2a5d 100%);
+  color: #fff;
+  font-family: 'Georgia', serif;
+  padding: 20px;
 }
 
 a {
