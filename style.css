@@ -190,3 +190,17 @@ footer {
   color: #888;
   background-color: #0b0c10;
 }
+
+.music-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
