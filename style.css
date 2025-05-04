@@ -140,7 +140,7 @@ a {
 }
 
 .glow-button:hover {
-  box-shadow: 0 0 10px #00ffec, 0 0 20px ##00ffec;
+  box-shadow: 0 0 10px #00ffec, 0 0 20px #00ffec;
   transform: scale(1.05);
 }
 
