@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Georgia', monospace;
-  background: radial-gradient(circle at center, #a97fd8 0%, #3a2a5d 100%);
+  background: radial-gradient(circle at center, ##8073a1 0%, #532b83 100%);
   color: #ffffff;
   overflow-x: hidden;
   padding: 20px;
@@ -95,7 +95,7 @@ a {
   animation: typing 4s steps(30, end) forwards;
   font-size: 1.2rem;
   margin-top: 1rem;
-  color: #66fcf1;
+  color: #00ffec;
 }
 
 @keyframes typing {
@@ -128,10 +128,10 @@ a {
 /* Buttons */
 .glow-button {
   background-color: transparent;
-  border: 2px solid #66fcf1;
+  border: 2px solid #00ffec;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  color: #66fcf1;
+  color: #00ffec;
   margin-top: 1rem;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   border-radius: 8px;
@@ -140,7 +140,7 @@ a {
 }
 
 .glow-button:hover {
-  box-shadow: 0 0 10px #66fcf1, 0 0 20px #66fcf1;
+  box-shadow: 0 0 10px #00ffec, 0 0 20px ##00ffec;
   transform: scale(1.05);
 }
 
@@ -156,11 +156,11 @@ a {
   font-style: italic;
   margin-top: 1rem;
   max-width: 300px;
-  color: #c0c0c0;
+  color: #ffffff;
 }
 
 .lyric-hover {
-  color: #45a29e;
+  color: #00ffec;
   transition: text-shadow 0.3s ease;
   cursor: pointer;
 }
