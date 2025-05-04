@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Georgia', monospace;
-  background: radial-gradient(circle at center, ##8073a1 0%, #532b83 100%);
+  background: radial-gradient(circle at center, #8073a1 0%, #532b83 100%);
   color: #ffffff;
   overflow-x: hidden;
   padding: 20px;
