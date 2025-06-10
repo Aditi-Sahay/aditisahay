@@ -117,10 +117,6 @@ a {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.rotating-book {
-  will-change: transform;
-}
-
 .book-image img:hover {
   transform: rotate(5deg) scale(1.05);
 }
