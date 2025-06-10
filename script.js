@@ -1,6 +1,6 @@
 // Typewriter Effect
 const typewriter = document.querySelector(".typewriter");
-const subtitle = "a storyteller, a dreamer, a rebel";
+const subtitle = " creating something...";
 let i = 0;
 
 function typeEffect() {
