@@ -90,8 +90,7 @@ a {
 .typewriter {
   border-right: 2px solid #66fcf1;
   white-space: nowrap;
-  width: 0;
-  animation: typing 4s steps(30, end) forwards;
+  width: fit-content;
   font-size: 1.2rem;
   margin-top: 1rem;
   color: #00ffec;
