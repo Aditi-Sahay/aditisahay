@@ -114,10 +114,10 @@ a {
   width: 250px;
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .book-image img:hover {
-  transition: transform 0.3s ease-in-out, transform 0.3s ease-in-out;
   transform: rotate(5deg) scale(1.05);
 }
 
@@ -154,7 +154,7 @@ a {
   margin-top: 1rem;
   max-width: 300px;
   color: #ffffff;
-  text-align: center; 
+  text-align: justify; 
 }
 
 .lyric-hover {
