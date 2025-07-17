@@ -1,178 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aditi Sahay</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" src="images/Untitled Project.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
-<body>
 
-  <!-- Nav Bar -->
-  <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About Me</a>
-    <a href="#book">Book</a>
-    <a href="#music">Music</a>
-    <a href="#regional manager">Regional Manager</a>
-    <a href="#contact">Contact</a>
-    <a href="blog.html">Blog</a>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Aditi Sahay</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#freelance">Freelancing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <!-- HOME -->
   <section id="home" class="section home-section">
-    <div id="particles-js" style="position: absolute; width: 100%; height: 100%; z-index: -1;"></div>
-<script>
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": { "value": "#cccccc" },
-    "shape": {
-      "type": "circle",
-      "stroke": { "width": 0, "color": "#000000" }
-    },
-    "opacity": {
-      "value": 0.3,
-      "random": false
-    },
-    "size": {
-      "value": 3,
-      "random": true
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#aaaaaa",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 2,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out"
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"   <!-- this is what lets lines connect to cursor -->
-      },
-      "onclick": {
-        "enable": false
-      }
-    },
-    "modes": {
-      "grab": {
-        "distance": 150,
-        "line_linked": {
-          "opacity": 0.5
-        }
-      }
-    }
-  },
-  "retina_detect": true
-});
-</script>
-
+    <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
     <h1 class="glitch" data-text="Aditi Sahay">Aditi Sahay</h1>
     <p class="typewriter">probably busy</p>
   </section>
 
-  
-  <section id="about" class="section about-section">
-    <h1 class="glitch" data-text="About Me">About Me</h1>
-    <div class="about-text">
-      <p> Hi! I am Aditi! I am currently in grade 12. A budding poet and a bookworm (if the book isn't related to my course). 
-        If not busy jamming to music, you'll find me reflecting upon the wonders of the human psyche. 
-        Designing or Video editing is another passion of mine. I love to dance or write music in my leisure time. 
-        I am not the most athletic person but I am a pretty good swimmer and a basketball player. 
-        Organizing events is another thing I do in school and in my community. 
-        I am extremely empathetic and a methodical person who does every job thoroughly. 
-        I love interacting and connecting with new like minded people.
-        I believe art is just science we haven’t fully understood yet. Through words, rhythm, and lines of code, I try to build meaning and beauty.
-        <br>
-A "perfectly imperfect" combo of both EQ and IQ describes me in a nutshell. </p>
-    </div>
-  </section>
-  
-  <!-- BOOK -->
-  <section id="book" class="section book-section">
-    <h1 class="glitch" data-text="About book">About book</h1>
-    <div class="book-text">
-      <h2>Unsaid: Things I Wish I Said</h2>
-      <p>A collection of poetry and words I wish I had said but were left 'unsaid'.</p>
-      <a href="https://www.amazon.in/Unsaid-Things-Wish-Aditi-Sahay/dp/B0FC2S8QX7/ref=sr_1_1?crid=2EDFPBWRVK8ZU&dib=eyJ2IjoiMSJ9.m56dQpx10R276Ll6N1sU9w.yLNSWukAC9Bx6-5Aip9YWiJe2-cgVDOOifOWkxI97ng&dib_tag=se&keywords=aditi+sahay&qid=1749277394&sprefix=aditi+sahay%2Caps%2C253&sr=8-1" 
-        class="glow-button">Get Now!</a>
-    </div>
-    <div class="book-image">
-      <img src="images/Screenshot 2025-06-07 115300.png" alt="Arcade Book Cover"/>
-    </div>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hi! I’m Aditi — passionate about coding, music, and storytelling. I explore the intersection of art and logic, crafting digital and creative experiences that matter.</p>
   </section>
 
-  <!-- MUSIC -->
-  <section id="music" class="section music-section">
-    <h1 class="glitch" data-text="About music">About music</h1>
-    <div class="video-container">
-  <iframe 
-    src="https://www.youtube.com/embed/yzySzR8uu6I" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
-    <div class="music-info">
-      <a href="https://open.spotify.com/track/0SysAgNEn8qPXQ5DES6cx2?si=1b6fcfa044454732" class="glow-button">Spotify</a>
-      <a href="https://soundcloud.com/aditi24897/kerosene" class="glow-button">SoundCloud</a>
-      <a href="https://www.youtube.com/watch?v=yzySzR8uu6I" class="glow-button">YouTube</a>
-      <a href="https://music.amazon.in/albums/B0D2639YX4?trackAsin=B0D262F1FH&do=play&ts=1744264568&ref=dm_sh_SfVWnxZ6Pu8dHiv775Cf183af&referrer=dm_sh_whatsapp" class="glow-button">Amazon Music</a>
-      <p class="behind-scenes"> After a whirlwind of an experience I turned to writing, what I do after any emotional storm. Tears to words to a tone I hummed.
-"kerosene" is my debut single I wrote which talks about how 2 young adults who are holding onto each other while knowing they should let go. 
-        Both of them are still growing and learning things and how their toxic traits ruins something "grandeur" they had, just like the combination of kerosene and fire burns everything up. 
-      <br> </p> 
-        <br> <p> <span class="lyric-hover">"i was the fire, and you kerosene"</span></p>
-    </div>
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>CodeDay</strong>: Regional Manager for student-run tech events.</li>
+      <li><strong>Kerosene</strong>: Original song that blends indie and electronic vibes.</li>
+      <li><strong>Unsaid</strong>: A self-published book exploring the quiet power of words.</li>
+    </ul>
   </section>
 
-  <section id="regional manager" class="section regional manager-section">
-    <h1 class="glitch" data-text="Regional Manager">Regional Manager</h1>
-    <div class="book-text">
-      <h2>CodeDay@Jamshedpur</h2>
-      <p>Not a milestone for Jamshedpur. It’s a spark. 
-        <br> The first ever coding hackathon-cum-workshop in Jamshepur. 
-      <br>  <br> <br> <br></p>
-    </div>
-    <div>
-      <img src="images/1745134816879.jpg" width=1600" height="600"/>
-    </div>
-  </section>
-  
-  <!-- CONTACT -->
-  <section id="contact" class="section contact-section">
-    <h1>Contact Me</h1>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/aditi-sahay-0504082ab/" class="glow-button" target="_blank">LinkedIn</a>
-      <a href="https://www.youtube.com/@aditiii777" class="glow-button" target="_blank">YouTube</a>
-      <a href="https://www.instagram.com/aditi._sahay/" class="glow-button" target="_blank">Instagram</a>
-    </div>
+  <section id="freelance" class="section">
+    <h2>Freelancing</h2>
+    <p>I offer services in web development, content creation, and design. Tell me what you’re looking for and let’s create something awesome together!</p>
+    <form action="https://formspree.io/f/xayrgzby" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="service">What do you need help with?</label>
+      <textarea id="service" name="service" rows="4" required></textarea>
+
+      <button type="submit">Submit Inquiry</button>
+    </form>
   </section>
 
-  <!-- Footer -->
-  <footer>
+  <section id="blog" class="section">
+    <h2>Blog</h2>
+    <p>Here’s where I rant about things I love, discover, or question. Sometimes useful, always honest.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Let’s connect!</p>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/aditisahay">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/aditisahay">Instagram</a></li>
+      <li><a href="https://www.youtube.com/@aditisahay">YouTube</a></li>
+    </ul>
+  </section>
+
+  <footer class="footer">
     <p>&copy; 2025 Aditi Sahay. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#cccccc" },
+        shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+        opacity: { value: 0.3 },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#aaaaaa",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: false }
+        },
+        modes: {
+          grab: {
+            distance: 150,
+            line_linked: { opacity: 0.5 }
+          }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
 </body>
+
 </html>
