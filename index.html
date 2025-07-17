@@ -22,19 +22,77 @@
 
   <!-- HOME -->
   <section id="home" class="section home-section">
+    <div id="particles-js" style="position: absolute; width: 100%; height: 100%; z-index: -1;"></div>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": { "value": "#cccccc" },
+    "shape": {
+      "type": "circle",
+      "stroke": { "width": 0, "color": "#000000" }
+    },
+    "opacity": {
+      "value": 0.3,
+      "random": false
+    },
+    "size": {
+      "value": 3,
+      "random": true
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#aaaaaa",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"   <!-- this is what lets lines connect to cursor -->
+      },
+      "onclick": {
+        "enable": false
+      }
+    },
+    "modes": {
+      "grab": {
+        "distance": 150,
+        "line_linked": {
+          "opacity": 0.5
+        }
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
     <h1 class="glitch" data-text="Aditi Sahay">Aditi Sahay</h1>
     <p class="typewriter">probably busy</p>
   </section>
 
   
   <section id="about" class="section about-section">
-    
-    <div class="ol-particles h-200" id="ol-particles-fOXSM">
-      <canvas class="particles-js-canvas-el" width="889" height="200" style="width: 100%; height: 100%;"></canvas>
-    </div>
-    
     <h1 class="glitch" data-text="About Me">About Me</h1>
-    
     <div class="about-text">
       <p> Hi! I am Aditi! I am currently in grade 12. A budding poet and a bookworm (if the book isn't related to my course). 
         If not busy jamming to music, you'll find me reflecting upon the wonders of the human psyche. 
@@ -115,5 +173,6 @@ A "perfectly imperfect" combo of both EQ and IQ describes me in a nutshell. </p>
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </body>
 </html>
