@@ -223,31 +223,34 @@ footer {
 }
 
 .gallery-container {
-  display: flex;
-  flex-direction: column; /* Stack images vertically */
-  gap: 1rem;
-  max-height: 300px; /* Limit height of the gallery */
-  overflow-y: auto; /* Scroll only inside this section */
+  max-height: 400px; /* Limit height so it doesn't take full page */
+  overflow-y: scroll; /* Scroll inside this section */
   padding: 1rem;
 }
 
-.gallery-container::-webkit-scrollbar {
-  width: 8px;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto adjust per screen */
+  gap: 1rem;
 }
 
-.gallery-container::-webkit-scrollbar-thumb {
-  background-color: #999;
-  border-radius: 10px;
-}
-
-.gallery-container img {
+.gallery-grid img {
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  height: auto;
   border-radius: 15px; /* Rounded corners */
   transition: transform 0.3s ease;
 }
 
-.gallery-container img:hover {
+.gallery-grid img:hover {
   transform: scale(1.05);
 }
+
+/* Optional: Custom scrollbar */
+.gallery-container::-webkit-scrollbar {
+  width: 8px;
+}
+.gallery-container::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
