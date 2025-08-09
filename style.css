@@ -224,13 +224,12 @@ footer {
 
 .gallery-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack images vertically */
   gap: 1rem;
-  max-height: 300px;
-  overflow-y: auto;
+  max-height: 300px; /* Limit height of the gallery */
+  overflow-y: auto; /* Scroll only inside this section */
   padding: 1rem;
 }
-
 
 .gallery-container::-webkit-scrollbar {
   width: 8px;
@@ -245,7 +244,7 @@ footer {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  border-radius: 15px; 
+  border-radius: 15px; /* Rounded corners */
   transition: transform 0.3s ease;
 }
 
