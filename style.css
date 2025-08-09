@@ -216,26 +216,36 @@ footer {
 .about-section h1 {
   margin-bottom: 1rem;
 }
+
 .gallery-section {
   text-align: center;
   padding: 2rem;
 }
 
-.gallery-scroll {
-  display: grid;
+.gallery-container {
+  display: flex;
   gap: 1rem;
-  max-height: 600px; /* Limit height */
-  overflow-y: auto;  /* Vertical scroll */
+  overflow-y: auto; /* Makes only gallery scroll */
+  scroll-behavior: smooth; /* Smooth scrolling */
   padding: 1rem;
 }
 
-.gallery-scroll img {
-  width: 100%;
-  height: auto;
+.gallery-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 10px;
+}
+
+.gallery-container img {
+  height: 200px;
   border-radius: 15px; /* Rounded corners */
+  flex-shrink: 0; /* Prevents image from shrinking */
   transition: transform 0.3s ease;
 }
 
-.gallery-scroll img:hover {
+.gallery-container img:hover {
   transform: scale(1.05);
 }
