@@ -223,9 +223,8 @@ footer {
 
 .gallery-scroll {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
-  max-height: 400px; /* Limit height */
+  max-height: 600px; /* Limit height */
   overflow-y: auto;  /* Vertical scroll */
   padding: 1rem;
 }
