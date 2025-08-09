@@ -222,13 +222,6 @@ footer {
   padding: 2rem;
 }
 
-.gallery-container {
-  display: flex;
-  gap: 1rem;
-  scroll-behavior: smooth; /* Smooth scrolling */
-  padding: 1rem;
-}
-
 .gallery-container::-webkit-scrollbar {
   height: 8px;
 }
