@@ -225,7 +225,7 @@ footer {
 .gallery-container {
   display: flex;
   gap: 1rem;
-  overflow-y: auto; /* Makes only gallery scroll */
+  overflow-x: auto; /* Makes only gallery scroll */
   scroll-behavior: smooth; /* Smooth scrolling */
   padding: 1rem;
 }
