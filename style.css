@@ -127,6 +127,7 @@ a {
   border: 2px solid #00ffec;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
+  text-align: center; 
   color: #00ffec;
   margin-top: 1rem;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
